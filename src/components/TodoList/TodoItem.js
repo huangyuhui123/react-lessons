@@ -59,7 +59,7 @@ class TodoItem extends Component {
         console.log(`todoItem ${this.props.title}render,`)
         return (
             <li>
-                <input type="checkbox" onClick={this.handleCheckboxChange} />
+                <input type="checkbox" onClick={this.handleCheckboxChange} checked={this.props.checked} />
                 <span>{this.props.title}</span>
                 &nbsp;
                 {/* <span>{this.props.completed ? '已完成' : '未完成'}</span>*/}

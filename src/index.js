@@ -1,7 +1,17 @@
 import React from 'react';
 import {render} from 'react-dom';
-
 import App from './App';
+
+
+//如果象牙全局的扩展React.Component的prototype,比如相把ajax的方法全局的挂载到组件的this，就可以使用下面的方式
+//http 可以挂载在全局react组件上但是一般不这么用
+//import * as services from './services';
+
+//在prototype上挂载一个叫http的东西，然后就可以在组件内通过this.http.方法名来执行一些操作
+//React.Component.prototype.http = services
+
+
+
 
 
 render(
